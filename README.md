@@ -32,3 +32,7 @@ Acesse [http://localhost:3000]
 | `/history` | Histórico |
 | `/training-explanation` | Explicação de Treino |
 | `/login` | Login |
+
+## Link do protótipo Figma:  
+
+https://www.figma.com/design/nIqlDzlzCnHh3BPd7N6Xc1/Prot%C3%B3tipo-Calli?node-id=0-1&t=EUcJx6oilSXNavKi-1
