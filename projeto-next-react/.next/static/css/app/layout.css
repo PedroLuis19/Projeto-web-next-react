@@ -1,0 +1,427 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/* ===== GLOBAL (App.css) ===== */
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: rgb(14, 14, 14);
+  color: white;
+  padding-top: 70px;
+  scrollbar-gutter: stable;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  width: 330px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 7px;
+  padding-left: 10px;
+  margin: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(179 255 56);
+}
+
+li::marker {
+  color: rgb(179 255 56);
+  font-weight: bold;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(33, 33, 33);
+  background: linear-gradient(to right, rgb(33, 33, 33), rgb(14, 14, 14));
+  box-shadow: 0 1px 10px 2px rgb(14, 14, 14);
+}
+
+.page-selection {
+  display: flex;
+  align-items: space-evenly;
+  margin: 10px;
+}
+
+.page-link {
+  font-size: 16px;
+  font-weight: 200;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 10px;
+  margin: 60px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  color: rgb(179 255 56);
+  border: 1px solid rgb(179 255 56);
+}
+
+.home-button {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.home-img-button {
+  height: 55px;
+}
+
+/* ===== EVOLUTION ===== */
+.general-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.staircase-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 1 1;
+  padding-bottom: 5px;
+}
+
+.step-bar {
+  flex: 1 1;
+  background-color: transparent;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.step-content {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.step-bar.completed .step-content {
+  color: #000000;
+}
+
+.step-bar.active .step-content {
+  color: #adff2f;
+}
+
+.step-label {
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.step-bar.completed {
+  background-color: rgb(179 255 56);
+}
+
+.step-bar.active {
+  background-color: transparent;
+  border: 1px solid rgb(179 255 56);
+  z-index: 2;
+}
+
+.step-bar.active .step-label {
+  color: rgb(179 255 56);
+  font-weight: bold;
+}
+
+.base-line {
+  height: 4px;
+  background-color: #333;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.message {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  padding: 10px;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.message-quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 20px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 5px;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  min-width: 200px;
+  max-width: 400px;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 10px;
+}
+
+/* ===== LOGIN ===== */
+.login-container {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.form-container {
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: max-content;
+  height: max-content;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 10px;
+}
+
+.ghost-button {
+  width: auto;
+  height: 40px;
+  background-color: transparent;
+  color: rgb(179 255 56);
+  font-size: 20px;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 7px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.ghost-button:hover {
+  background-color: rgb(179 255 56);
+  color: rgb(33, 33, 33);
+}
+
+/* ===== TRAINING ORGANIZATION ===== */
+.list-container {
+  display: grid;
+  grid-column: auto;
+  place-items: center;
+  justify-self: center;
+  height: auto;
+  width: 400px;
+  max-width: 400px;
+}
+
+.input-field {
+  max-width: 300px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 7px;
+  padding-left: 10px;
+}
+
+.train-add {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  color: rgb(179 255 56);
+  font-size: 30px;
+  text-align: center;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: rgb(179 255 56);
+  color: rgb(33, 33, 33);
+}
+
+.todo-folder {
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  gap: 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-size: 20px;
+  flex: 1 1;
+  padding: 10px;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  max-width: 200px;
+  height: auto;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgb(179 255 56);
+  border-radius: 10px;
+}
+
+.todo-item:has(input[type='checkbox']:checked) {
+  border: 1px solid rgb(57, 57, 57);
+}
+
+.todo-text {
+  overflow-wrap: break-word;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.todo-date {
+  font-style: italic;
+  color: rgb(100, 100, 100);
+  font-weight: 50;
+  font-size: 16px;
+  text-align: center;
+  max-width: 100px;
+  background-color: transparent;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.checkmark {
+  height: 40px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid rgb(179 255 56);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.small-description {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(100, 100, 100);
+}
+
+.day-folder {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: auto;
+  min-height: 200px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 10px;
+}
+
+.folder-container {
+  display: flex;
+  flex-direction: row;
+  align-items: self-start;
+}
+
+/* ===== TRAIN EXPLANATION ===== */
+.title {
+  width: max-content;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.section {
+  margin: 10px;
+}
+
+.video {
+  width: 800px;
+  border: 1px solid rgb(179 255 56);
+  border-radius: 10px;
+}
+
+.numerated-instruction {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  padding: 5px;
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 5px;
+  width: max-content;
+}
+
